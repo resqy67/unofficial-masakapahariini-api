@@ -289,9 +289,15 @@ const Controller = {
             object.ingredient = ingredientsArr;
             let step, resultStep;
             let stepArr = [];
+<<<<<<< Updated upstream
             elementTutorial.find('.steps').find('.step').each((i, e) => {
                 step = $(e).find('.step-description').find('p').text();
                 resultStep = `${i + 1} ${step}`
+=======
+            elementTutorial.find('.step').each((i, e) => {
+                step = $(e).find('.content p').text();
+                resultStep = `${i + 1}. ${step}`
+>>>>>>> Stashed changes
                 stepArr.push(resultStep);
             });
 
